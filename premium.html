@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Obfuscator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+</head>
+<body class="premium-theme">
+  <div class="premium-container">
+    <h1 class="premium-title">🌟 Premium Obfuscator</h1>
+
+    <!-- 🔐 Login -->
+    <div id="login-section" class="login-row">
+      <input id="premium-code" class="premium-code" placeholder="ใส่รหัสพรีเมียม" />
+      <button onclick="loginPremium()" class="premium-btn">เข้าสู่ระบบ</button>
+    </div>
+
+    <!-- ⭐ Premium Feature -->
+    <div id="premium-section" style="display: none; width: 100%;">
+      <textarea id="premium-input" class="premium-textarea" placeholder="วางโค้ด Python..."></textarea>
+      <button onclick="obfuscatePremium()" class="premium-btn">⚙️ Obfuscate (30 ชั้น)</button>
+
+      <div id="premium-result-box" style="display: none;">
+        <textarea id="premium-output" class="premium-textarea" readonly></textarea>
+        <button onclick="copyPremiumResult()" class="premium-btn">📋 คัดลอก</button>
+      </div>
+    </div>
+
+    <!-- ✅ เครดิต -->
+    <div class="credit">
+      <small>Obfuscator by <a href="https://discord.gg/rgRWGJ7GEM" target="_blank">discord.gg</a></small>
+    </div>
+  </div>
+</body>
+</html>
